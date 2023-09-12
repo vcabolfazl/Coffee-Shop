@@ -38,7 +38,7 @@ export default function Header() {
     <header style={{ zIndex: '999' }}
      className={`fixed z-50 right-0 left-0 h-24 px-20 w-full mx-auto
                     text-xl text-white justify-between p-3 flex items-center bg-black/50
-                    backdrop-blur-[6px] ${param.ref ? "top-0" : " top-9 px-5 w-[97%] xl:px-10 xl:w-[90%] rounded-3xl"} `}>
+                    backdrop-blur-[6px] ${param.ref ? "top-0" : " top-9 px-5 w-[95%] xl:px-10 xl:w-[90%] rounded-3xl"} `}>
      {/* <!-- Start Right Side Header --> */}
      <div className="col-right flex items-center gap-x-0 xl:gap-x-9">
       {/* <!-- Logo in Navbar --> */}
@@ -219,7 +219,7 @@ export default function Header() {
     {/* <!-- End Navbar --> */}
    </section>
    <section className="md:hidden block w-full">
-    <header className="flex bg-white dark:bg-zinc-700 dark:text-white h-16 items-center p-3 justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 flex bg-white dark:bg-zinc-700 dark:text-white h-16 items-center p-3 justify-between">
      {/* <!-- Hamburger Menu Btn--> */}
      <button id="HamburgerMenuBtn" onClick={() => {
       setMenu(' visible')

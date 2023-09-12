@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 export default function Home() {
   return (
     <>
-      {/* Background  Desktop*/}
+      {/* --> Start Background  Desktop*/}
       <section className=" md:flex justify-center items-end hidden">
         <div className="hed__desktop w-full">
 
@@ -66,6 +66,11 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
+      {/* End Background Desktop <--*/}
+
+      {/* --> Start Background  Mobile */}
+      <section className="hed__mobile block md:hidden  mt-16"></section>
+      {/* End Background  Mobile <-- */}
     </>
   )
 }
