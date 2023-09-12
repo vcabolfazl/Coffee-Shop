@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRoutes } from 'react-router-dom'
 import Router from './Pages/Router';
-import { useState } from 'react';
-import { useEffect } from 'react';
-// import Svg from './components/svg/svg';
+import Header from './Components/Header';
+import Svg from './Components/Svg';
 export default function App() {
 
   const router = useRoutes(Router)
@@ -21,8 +20,9 @@ export default function App() {
   }
   return (
     <>
-      {/* <Svg /> */}
+      <Svg />
       {router}
+      <Header />
     </>
   )
 }

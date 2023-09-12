@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+
+ hr {
+     @apply dark:border-t-white/10 border-t-gray-300;
+ }
+
+ @font-face {
+     font-family: 'Morabba Bold';
+     src: url('../../public/assets/fonts/Morabba/Morabba-Bold.woff2');
+
+ }
+
+ @font-face {
+     font-family: 'Morabba medium';
+     src: url('../../public/assets/fonts/Morabba/Morabba-Medium.woff2');
+
+ }
+
+ @font-face {
+     font-family: 'Morabba light';
+     src: url('../../public/assets/fonts/Morabba/Morabba-Light.woff2');
+
+ }
+
+
+ @font-face {
+     font-family: 'dana';
+     src: url('../../public/assets/fonts/Dana/DanaFaNum-Regular.woff2');
+
+ }
+
+ @font-face {
+     font-family: 'dana bold';
+     src: url('../../public/assets/fonts/Dana/DanaFaNum-DemiBold.woff2');
+
+ }
+
+ @font-face {
+     font-family: 'dana medium';
+     src: url('../../public/assets/fonts/Dana/DanaFaNum-DemiBold.woff2');
+
+ }
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+ }
+
+ input[type=number] {
+ -moz-appearance:textfield;
+ }
+ input{
+     outline: none;
+ }
+}
+
+@layer components {
+ .ltr {
+     direction: ltr;
+   }
+ .rtl {
+     direction: rtl;
+ }
+ .hed__desktop {
+     position: relative;
+ }
+
+ .hed__mobile {
+     background: url(../../public/assets/images/headerBgMobile.webp) no-repeat;
+     background-size: cover;
+     position: relative;
+     width: 100%;
+     height: 30vh;
+
+ }
+
+ .hover__link:hover {
+     transition: all 300ms;
+     color: #FDBA74;
+ }
+
+ .ProductBox {
+     max-height: 240px;
+     overflow-y: auto;
+ }
+ .overflowScroll {
+     max-height: 100vh;
+     overflow-y: auto;
+ }
+ .li__item {
+     @apply flex gap-x-2.5 items-center py-2 px-3 rounded-md;
+ }
+
+ .active {
+     @apply text-orange-300 bg-orange-200/20;
+ }
+
+ .li__link {
+     @apply flex gap-x-2 text-orange-300;
+ }
+
+ #hamberMenu {
+     @apply z-20 fixed w-64 top-0 right-0 bottom-0 max-h-screen bg-white dark:bg-zinc-700 py-3 px-4;
+ }
+
+ .shoppingCart {
+     @apply z-20 fixed w-64 top-0 left-0 bottom-0 max-h-screen bg-white dark:bg-zinc-700 py-3 px-4;
+ }
+
+ .drop__item--action::after {
+     content: '';
+     display: block;
+     width: 4px;
+     height: 4px;
+     border-radius: 100px;
+     background-color: #fdba74;
+     position: absolute;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+ }
+
+ .drop__item--action {
+     padding-right: 10px;
+     position: relative;
+     color: #fdba74;
+ }
+}
