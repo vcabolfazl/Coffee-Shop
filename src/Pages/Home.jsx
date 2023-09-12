@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +7,23 @@ import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import "swiper/css";
 import 'swiper/css/pagination';
+import ProductCard from '../Components/ProductCard';
 export default function Home() {
+  const [allProducts, setAllProducts] = useState([])
+  const [allCategorys, setAllCategorys] = useState([])
+  useEffect(() => {
+      fetch(`http://localhost:3000/Datas.json`)
+          .then(res => res.json())
+          .then(allproducts => {
+              setAllProducts(allproducts.Products)
+          })
+      fetch(`http://localhost:3000/Datas.json`)
+          .then(res => res.json())
+          .then(categorysData => {
+              setAllCategorys(categorysData.Categorys)
+          })
+  }, [])
+
   return (
     <>
       {/* --> Start Background  Desktop*/}
@@ -71,6 +87,35 @@ export default function Home() {
       {/* --> Start Background  Mobile */}
       <section className="hed__mobile block md:hidden  mt-16"></section>
       {/* End Background  Mobile <-- */}
+
+      {/* --> Start New Product */}
+      <section id='NewProduct' className="md:newProduct mt-5 relative">
+        <div className="p-2 md:container md:pt-48">
+          {/* <!-- Start Titel --> */}
+          <div className="flex justify-between items-end">
+            <div className="dark:text-white leading-10">
+              <h1 className="text-2xl md:text-5xl font-MorabbaM">جدیدترین محصولات</h1>
+              <p className="font-MorabbaL text-md md:text-3xl">فرآوری شده از دانه قهوه</p>
+            </div>
+            <div className="flex items-center text-left text-orange-300 gap-x-1">
+              <Link href="#" className="text-xs md:text-2xl">مشاهده همه محصولات</Link>
+              <svg className="w-4 h-4">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
+          </div>
+          {/* <!-- End Titel --> */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-full mt-12 gap-5">
+            {
+              allProducts.slice(-8).map(product => (
+                <ProductCard key={product.id} {...product} />
+              ))
+            }
+          </div>
+        </div>
+      </section>
+      {/* End New Product <-- */}
+
     </>
   )
 }

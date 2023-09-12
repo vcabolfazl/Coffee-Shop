@@ -131,4 +131,17 @@
      position: relative;
      color: #fdba74;
  }
+ .newProduct {
+    background: url(../../public/assets/images/body-bg.png)no-repeat;
+}
+
+.ProductCard {
+    @apply justify-center bg-white text-xs md:text-xl space-y-3 md:w-[300px] md:h-[467px] rounded-2xl p-2 md:p-5 dark:bg-zinc-700 dark:text-white;
+}
+
+.wH-5 {
+    @apply w-5 h-5 text-gray-400 md:w-8 md:h-8;
+}
+
+
 }

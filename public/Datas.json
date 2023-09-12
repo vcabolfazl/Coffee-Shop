@@ -4,7 +4,7 @@
             "id": 9,
             "title": "قهوه ترک لایت بلک کافی کد Tl16 مقدار 100 گرم",
             "images": [
-                "/images/products/p9.png"
+                "/assets/images/products/p9.png"
             ],
             "price": 58500,
             "discount": 15,
@@ -19,7 +19,7 @@
             "id": 10,
             "title": "قهوه ترک مدیوم بلک کافی کد Tm13 مقدار 100 گرم",
             "images": [
-                "/images/products/p15.png"
+                "/assets/images/products/p15.png"
             ],
             "price": 59500,
             "discount": 16,
@@ -34,7 +34,7 @@
             "id": 11,
             "title": "پودر قهوه ترک مولتی کافه - 100 گرم",
             "images": [
-                "/images/products/p16.png"
+                "/assets/images/products/p16.png"
             ],
             "price": 60000,
             "discount": 13,
@@ -49,7 +49,7 @@
             "id": 12,
             "title": "پودر قهوه ترک فرمند کد 2500 - 100 گرم",
             "images": [
-                "/images/products/p14.png"
+                "/assets/images/products/p14.png"
             ],
             "price": 55000,
             "discount": 13,
@@ -63,9 +63,9 @@
             "id": 13,
             "title": "اسپرسو ساز مباشی مدل ECM2010",
             "images": [
-                "/images/products/p10.png",
-                "/images/products/p10(2).png",
-                "/images/products/p10(3).png"
+                "/assets/images/products/p10.png",
+                "/assets/images/products/p10(2).png",
+                "/assets/images/products/p10(3).png"
             ],
             "price": 4700000,
             "discount": null,
@@ -80,9 +80,9 @@
             "id": 14,
             "title": "اسپرسوساز زیگما مدل rl-222",
             "images": [
-                "/images/products/p13.png",
-                "/images/products/p13(2).png",
-                "/images/products/p13(3).png"
+                "/assets/images/products/p13.png",
+                "/assets/images/products/p13(2).png",
+                "/assets/images/products/p13(3).png"
             ],
             "price": 2540000,
             "discount": null,
@@ -97,8 +97,8 @@
             "id": 15,
             "title": "اسپرسو ساز دلونگی مدل BCO431",
             "images": [
-                "/images/products/p20.png",
-                "/images/products/p20(2).jpg"
+                "/assets/images/products/p20.png",
+                "/assets/images/products/p20(2).jpg"
             ],
             "price": 9690000,
             "discount": null,
@@ -113,8 +113,8 @@
             "id": 16,
             "title": "ماگ مدل تراول 16-1-1",
             "images": [
-                "/images/products/p19.png",
-                "/images/products/p19(2).jpg"
+                "/assets/images/products/p19.png",
+                "/assets/images/products/p19(2).jpg"
             ],
             "price": 179000,
             "discount": null,
@@ -129,8 +129,8 @@
             "id": 17,
             "title": "ماگ سفری مدل Coffee ظرفیت 0.38 لیتر",
             "images": [
-                "/images/products/p11.png",
-                "/images/products/p11(2).jpg"
+                "/assets/images/products/p11.png",
+                "/assets/images/products/p11(2).jpg"
             ],
             "price": 233500,
             "discount": null,
@@ -145,9 +145,9 @@
             "id": 18,
             "title": "سرویس قهوه خوری 13 پارچه آجار کد FDS-009545",
             "images": [
-                "/images/products/p12.png",
-                "/images/products/p12(2).png",
-                "/images/products/p12(3).png"
+                "/assets/images/products/p12.png",
+                "/assets/images/products/p12(2).png",
+                "/assets/images/products/p12(3).png"
             ],
             "price": 945000,
             "discount": null,
@@ -162,8 +162,8 @@
             "id": 19,
             "title": "سرویس قهوه خوری 6 پارچه کد 0075",
             "images": [
-                "/images/products/p17.png",
-                "/images/products/p17(2).jpg"
+                "/assets/images/products/p17.png",
+                "/assets/images/products/p17(2).jpg"
             ],
             "price": 450000,
             "discount": null,
@@ -178,7 +178,7 @@
             "id": 1,
             "title": "قهوه بن مانو نورسکا کد 02 PM 250 گرمی",
             "images": [
-                "/images/products/p8.png"
+                "/assets/images/products/p8.png"
             ],
             "price": 98700,
             "discount": 13,
@@ -193,7 +193,7 @@
             "id": 2,
             "title": "قهوه اسپرسو بن مانو مدل مانوکا 250 گرمی",
             "images": [
-                "/images/products/p2.png"
+                "/assets/images/products/p2.png"
             ],
             "price": 214000,
             "discount": null,
@@ -208,7 +208,7 @@
             "id": 3,
             "title": "قهوه بن مانو نورسکا کد 09 AM 250 گرمی",
             "images": [
-                "/images/products/p6.png"
+                "/assets/images/products/p6.png"
             ],
             "price": 79000,
             "discount": 17,
@@ -223,7 +223,7 @@
             "id": 4,
             "title": "قهوه اسپرسو بن مانو مدل آرتیمان وزن 250 گرم",
             "images": [
-                "/images/products/p5.png"
+                "/assets/images/products/p5.png"
             ],
             "price": 15000,
             "discount": null,
@@ -238,7 +238,7 @@
             "id": 5,
             "title": "قهوه اسپرسو بن مانو مدل آرتیمان وزن 250 گرم",
             "images": [
-                "/images/products/p1.png"
+                "/assets/images/products/p1.png"
             ],
             "price": 119000,
             "discount": 9,
@@ -253,7 +253,7 @@
             "id": 6,
             "title": "قهوه بن مانو نورسکا کد 08 PM 250 گرمی",
             "images": [
-                "/images/products/p7.png"
+                "/assets/images/products/p7.png"
             ],
             "price": 55000,
             "discount": null,
@@ -268,7 +268,7 @@
             "id": 7,
             "title": "قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی",
             "images": [
-                "/images/products/p3.png"
+                "/assets/images/products/p3.png"
             ],
             "price": 194000,
             "discount": 16,
@@ -283,7 +283,7 @@
             "id": 8,
             "title": "قهوه اسپرسو بن مانو مدل آرتیمان وزن 250 گرم",
             "images": [
-                "/images/products/p4.png"
+                "/assets/images/products/p4.png"
             ],
             "price": 110000,
             "discount": null,
@@ -520,9 +520,9 @@
             "id": 13,
             "title": "اسپرسو ساز مباشی مدل ECM2010",
             "images": [
-                "/images/products/p10.png",
-                "/images/products/p10(2).png",
-                "/images/products/p10(3).png"
+                "/assets/images/products/p10.png",
+                "/assets/images/products/p10(2).png",
+                "/assets/images/products/p10(3).png"
             ],
             "price": 4700000,
             "discount": null,
@@ -537,7 +537,7 @@
             "id": 12,
             "title": "پودر قهوه ترک فرمند کد 2500 - 100 گرم",
             "images": [
-                "/images/products/p14.png"
+                "/assets/images/products/p14.png"
             ],
             "price": 55000,
             "discount": 13,
