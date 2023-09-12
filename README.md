@@ -1,4 +1,4 @@
-## Online book store
+## Coffee Shop (React JS)
 This project only contains Front-End code and does not include Back-end code
 ### Technologies used :
 - React JS
