@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom'
 import Router from './Pages/Router';
 import Header from './Components/Header';
 import Svg from './Components/Svg';
+import Footer from './Components/Footer';
 export default function App() {
 
   const router = useRoutes(Router)
@@ -23,6 +24,7 @@ export default function App() {
       <Svg />
       {router}
       <Header />
+      <Footer />
     </>
   )
 }

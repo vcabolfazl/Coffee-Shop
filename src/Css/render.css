@@ -143,5 +143,75 @@
     @apply w-5 h-5 text-gray-400 md:w-8 md:h-8;
 }
 
+.swiper-button-prev::after {
+    font-size: 10px !important;
+    color: black;
+    @apply dark:text-white;
+}
 
+.swiper-button-prev,
+.swiper-button-next {
+    position: relative !important;
+}
+
+.swiper-button-next {
+    left: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100px !important;
+}
+
+.swiper-button-prev {
+    right: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100px !important;
+}
+
+.swiper-button-next::after {
+    font-size: 10px !important;
+    color: black;
+    @apply dark:text-white;
+}
+
+.club {
+    width: 100%;
+    background: linear-gradient(90deg, #10B981 0%, #059669 100%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding-bottom: 32px;
+    padding-top: 34px
+}
+
+.clubBtn {
+    @apply md:w-24 w-16 h-16 md:h-24 justify-center relative bg-white rounded-xl text-center text-emerald-600;
+}   
+
+.banerCategory{
+    background: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+}
+.bannerCategory1{
+    background: url(../../public/assets/images/1.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+}
+.bannerCategory2{
+    background: url(../../public/assets/images/2b.jpg);
+}
+.bannerCategory3{
+    background: url(../../public/assets/images/3.jpg);
+}
+.bannerCategory4{
+    background: url(../../public/assets/images/4.jpg);
+}
+
+.bannerCategory5{
+    background: url(../../public/assets/images/Untitled-1.jpg) no-repeat;
+    background-size: cover;
+}
 }

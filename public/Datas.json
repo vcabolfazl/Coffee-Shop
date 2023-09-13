@@ -299,31 +299,31 @@
         {
             "id": 1,
             "title": "قهوه دمی و اسپرسو",
-            "img": "/images/categories/category1.png",
+            "img": "/assets/images/categories/category1.png",
             "category": "coffeeAndEspresso"
         },
         {
             "id": 2,
             "title": "لوازم جانبی و تجهیزات",
-            "img": "/images/categories/category2.png",
+            "img": "/assets/images/categories/category2.png",
             "category": "Accessories"
         },
         {
             "id": 3,
             "title": "اسپرسو ساز",
-            "img": "/images/categories/category3.png",
+            "img": "/assets/images/categories/category3.png",
             "category": "espressoMaker"
         },
         {
             "id": 4,
             "title": "پک تستر قهوه",
-            "img": "/images/categories/category4.png",
+            "img": "/assets/images/categories/category4.png",
             "category": "TestPack"
         },
         {
             "id": 5,
             "title": "قهوه ترک",
-            "img": "/images/categories/category5.png",
+            "img": "/assets/images/categories/category5.png",
             "category": "TurkCoffee"
         }
     ],
@@ -331,56 +331,56 @@
         {
             "id": 1,
             "title": "آموزش درست کردن ماکتیل آرامش",
-            "img": "/images/blogs/ارامش.jpg",
-            "video": "/images/blogs/ارامش.mp4",
+            "img": "/assets/images/blogs/ارامش.jpg",
+            "video": "/assets/images/blogs/ارامش.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'><li>آب</li><li>شکر</li><li>توت فرنگی</li><li>نوشابه گاز دار با طعم لیمو</li><li>آب لیمو</li><li>  توت فرنگی ماکریت شده</li></ul></>"
         },
         {
             "id": 2,
             "title": "آموزش درست کردن اسموتی توت فرنگی",
-            "img": "/images/blogs/توت‌فرنگی.jpg",
-            "video": "/images/blogs/توت‌فرنگی.mp4",
+            "img": "/assets/images/blogs/توت‌فرنگی.jpg",
+            "video": "/assets/images/blogs/توت‌فرنگی.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'><li>آب</li><li>شکر</li><li>توت فرنگی</li><li>نوشابه گاز دار با طعم لیمو</li><li>آب لیمو</li><li>توت فرنگی ماکریت شده</li></ul></>"
         },
         {
             "id": 3,
             "title": "آموزش درست کردن ماکتیل چشم آسمان او",
-            "img": "/images/blogs/چشم‌اسمان.jpg",
-            "video": "/images/blogs/چشم‌اسمان.mp4",
+            "img": "/assets/images/blogs/چشم‌اسمان.jpg",
+            "video": "/assets/images/blogs/چشم‌اسمان.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'> <li>آب گاز دار</li><li>آب لیمو</li><li>برگ نعنا</li><li>چای سبز دم کرده شده و خنک شده</li><li>شکر</li><li>مقداری یخ</li></ul></>"
         },
         {
             "id": 4,
             "title": "آموزش درست کردن ماکتیل زغال اخته",
-            "img": "/images/blogs/زغال‌اخته.jpg",
-            "video": "/images/blogs/زغال‌اخته.mp4",
+            "img": "/assets/images/blogs/زغال‌اخته.jpg",
+            "video": "/assets/images/blogs/زغال‌اخته.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'><li>آب</li><li>شکر</li><li>از گاز دار</li><li>یخ خرد شده</li><li>برگ ریحان</li></ul></>"
         },
         {
             "id": 5,
             "title": "آموزش درست کردن ماکتیل ساحل خزر",
-            "img": "/images/blogs/ساحل‌خزر.jpg",
-            "video": "/images/blogs/ساحل‌خزر.mp4",
+            "img": "/assets/images/blogs/ساحل‌خزر.jpg",
+            "video": "/assets/images/blogs/ساحل‌خزر.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'><li>آب</li><li>آب لیمو</li><li>شکر</li><li> برگ نعنا</li><li>لیمو</li><li>آب گاز دار با سودا</li></ul></>"
         },
         {
             "id": 6,
             "title": "آموزش درست کردن اسموتی طالبی",
-            "img": "/images/blogs/طالبی.jpg",
-            "video": "/images/blogs/طالبی.mp4",
+            "img": "/assets/images/blogs/طالبی.jpg",
+            "video": "/assets/images/blogs/طالبی.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'><li>۱۰۰ گرم توت فرنگی</li><li>۱۰۰ گرم تمشک</li><li>۵۰ گرم بلوبری</li><li>۲ قاشق غذاخوری عسل</li><li>۱ قالب یخ</li><li> ۱ لیوان سودا یا نوشابه اسپرایت</li></ul></>"
         },
         {
             "id": 7,
             "title": "آموزش درست کردن ماکتیل لبخند سرخ",
-            "img": "/images/blogs/لبخند‌سرخ.jpg",
-            "video": "/images/blogs/لبخند‌سرخ.mp4",
+            "img": "/assets/images/blogs/لبخند‌سرخ.jpg",
+            "video": "/assets/images/blogs/لبخند‌سرخ.mp4",
             "date": "21 مرداد 1402",
             "About": "<><h3 className='text-lg text-orange-500 font-MorabbaB my-5'>مواد لازم برای تهیه ماکتیل توت فرنگی به شرح زیر است:</h3><ul className='px-9 list-decimal'><li>۱ عدد کیوی</li><li>۱ عدد موز</li><li>۲ قاشق غذاخوری پودر نارگیل</li><li>۱ عدد پرتقال</li><li>یخ به‌مقدار لازم</li><li> ۲ قاشق غذاخوری عسل</li></ul></>"
         }
