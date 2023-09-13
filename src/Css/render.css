@@ -4,6 +4,15 @@
 
 @layer base {
 
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FDBA74;
+}
 
  hr {
      @apply dark:border-t-white/10 border-t-gray-300;
@@ -214,4 +223,32 @@
     background: url(../../public/assets/images/Untitled-1.jpg) no-repeat;
     background-size: cover;
 }
+    /* Login */
+    .coffeeIcone {
+        animation: animationCoffee 1.2s infinite alternate;
+    }
+   
+    .lockIcone {
+        animation: animationLock 1.2s infinite alternate;
+    }
+   
+    @keyframes animationCoffee {
+        from {
+            margin-top: -5px;
+        }
+   
+        to {
+            margin-top: 5px;
+        }
+    }
+   
+    @keyframes animationLock {
+        from {
+            margin-top: 5px;
+        }
+   
+        to {
+            margin-top: -5px;
+        }
+    }
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 import Home from './Home'
+import Login from './login'
+import Signup from './signup'
+import ForgotPassword from './forgotPassword'
 // import ProductInfo from './components/AboutProduct/productInfo'
 // import Error from './components/404'
-// import Login from './components/Login/login'
-// import Signup from './components/Login/signup'
 // import ProductsPage from './components/ProductsPage/ProductsPage'
 // import BlogPage from './components/Blogs/BlogPage'
 // import Bloginfo from './components/Blogs/Bloginfo'
@@ -19,6 +20,18 @@ let Router = [
     {
         path: '/',
         element: <Home />,
+    },
+    {
+        path: '/Login',
+        element: <Login />,
+    },
+    {
+        path: '/signup',
+        element: <Signup />,
+    },
+    {
+        path: '/forgotPassword',
+        element: <ForgotPassword />,
     },
     // {
     //     path: '/Blogs',
@@ -66,18 +79,6 @@ let Router = [
     // {
     //     path: '/product/:id',
     //     element: <ProductInfo />,
-    // },
-    // {
-    //     path: '/signup',
-    //     element: <Signup />,
-    // },
-    // {
-    //     path: '/Login',
-    //     element: <Login />,
-    // },
-    // {
-    //     path: '/forgotPassword',
-    //     element: <ForgotPassword />,
     // },
     // {
     //     path: '/Products',
