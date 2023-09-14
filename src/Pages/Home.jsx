@@ -9,6 +9,9 @@ import "swiper/css";
 import 'swiper/css/pagination';
 import ProductCard from '../Components/ProductCard';
 import Blogs from '../Components/Blogs';
+import SectionHeader from '../Components/SectionHeader';
+import Slider from '../Components/Slider';
+import MoreBtn from '../Components/MoreBtn';
 export default function Home() {
   const [allProducts, setAllProducts] = useState([])
   const [allCategorys, setAllCategorys] = useState([])
@@ -92,20 +95,12 @@ export default function Home() {
       {/* --> Start New Product */}
       <section id='NewProduct' className="md:newProduct mt-5 relative">
         <div className="p-2 md:container md:pt-48">
-          {/* <!-- Start Titel --> */}
-          <div className="flex justify-between items-end">
-            <div className="dark:text-white leading-10">
-              <h1 className="text-2xl md:text-5xl font-MorabbaM">جدیدترین محصولات</h1>
-              <p className="font-MorabbaL text-md md:text-3xl">فرآوری شده از دانه قهوه</p>
-            </div>
-            <div className="flex items-center text-left text-orange-300 gap-x-1">
-              <Link href="#" className="text-xs md:text-2xl">مشاهده همه محصولات</Link>
-              <svg className="w-4 h-4">
-                <use href="#chevron-left"></use>
-              </svg>
-            </div>
-          </div>
-          {/* <!-- End Titel --> */}
+          <SectionHeader
+            title={"جدیدترین محصولات"}
+            subTitle={"فرآوری شده از دانه قهوه"}
+            btnHref={"#"}
+            btnTitle={"مشاهده همه محصولات"}
+          />
           <div className="grid gap-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full mt-12">
             {
               allProducts.slice(-8).map(product => (
@@ -162,50 +157,19 @@ export default function Home() {
         <div className="px-2 container">
           <div className="">
             <div className="swiper mySwiper">
-              {/* <!-- Start Titel --> */}
-              <div className="flex justify-between items-end px-">
-                <div className="dark:text-white leading-10">
-                  <h1 className="text-2xl md:text-5xl font-MorabbaM">محصولات پر فروش</h1>
-                  <p className="font-MorabbaL text-md md:text-3xl">پیشنهاد قهوه خور ها ...</p>
-                </div>
-                {/* <!-- Btn Slider --> */}
-                <div className="flex gap-x-4 text-black dark:text-white">
-                  <div className="swiper-button-next bg-white dark:text-white dark:bg-zinc-700">
-                  </div>
-                  <div className="swiper-button-prev bg-white dark:text-white dark:bg-zinc-700">
-                  </div>
-                </div>
-              </div>
+              <SectionHeader
+                title={"محصولات پر فروش"}
+                subTitle={"پیشنهاد قهوه خور ها ..."}
+                btnHref={"#"}
+                btnTitle={"مشاهده محصولات پرفروش"}
+              />
               {/* <!-- End Titel --> */}
 
               {/* <!-- Slider --> */}
-              <div className='mt-20'>
-                <Swiper
-                  navigation={true}
-                  modules={[Navigation]}
-                  slidesPerView={1}
-                  loop={true}
-                  spaceBetween={10}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  breakpoints={{
-                    320: { slidesPerView: 2, spaceBetween: 20 },
-                    480: { slidesPerView: 3, spaceBetween: 20 },
-                    768: { slidesPerView: 3, spaceBetween: 20 },
-                    1024: { slidesPerView: 4, spaceBetween: 20 },
-                    1500: { slidesPerView: 5, spaceBetween: 20 },
-                  }}
-                  className="mySwiper"
-                >
-                  {
-                    allProducts.slice(-10).map(Slid => (
-                      <SwiperSlide key={Slid.id}>
-                        <ProductCard {...Slid} />
-                      </SwiperSlide>
-                    ))
-                  }
-                </Swiper>
+              <div className='mt-10'>
+                <Slider
+                  Products={allProducts}
+                />
               </div>
 
             </div>
@@ -215,7 +179,7 @@ export default function Home() {
       {/* End Slider <-- */}
 
       {/* --> Start Club */}
-      <section className="">
+      <section className="mt-20">
         <div className="px-2 container">
           <div className="club px-2 md:px-11 text-white flex flex-wrap justify-between">
             <div className="flex items-center gap-x-9">
@@ -251,12 +215,10 @@ export default function Home() {
               <div className="text-center">
                 <h2 className="text-3xl">542</h2>
                 <h3>امتیـــــــاز شما</h3>
-                <Link href="#" className="text-xs md:text-base flex w-full bg-orange-300 py-2 px-3 rounded-full">
-                  دریافت جایزه
-                  <svg className="w-4 h-4 md:w-5 md:h-5">
-                    <use href="#chevron-left"></use>
-                  </svg>
-                </Link>
+                <MoreBtn
+                  title={"دریافت جایزه"}
+                  href={"/"}
+                />
               </div>
             </div>
           </div>
@@ -282,7 +244,10 @@ export default function Home() {
                 <h1 className='text-4xl font-semibold'> پونو قهوه </h1>
                 <h2 >انواع قهوه اسپرسو ، قهوه ترک ، قهوه دمی ، دان قهوه، قهوه عربیکا، قهوه روبوستا</h2>
 
-                <Link href="#" className="text-xs md:text-base flex items-center float-left bg-orange-300 py-2 px-3 rounded-full">خرید آنلاین<svg className="w-4 h-4 md:w-5 md:h-5"><use href="#chevron-left"></use></svg></Link>
+                <MoreBtn
+                  title={"خرید آنلاین"}
+                  href={"/"}
+                />
 
               </div>
             </div>
@@ -292,7 +257,10 @@ export default function Home() {
                 <h1 className='text-4xl font-semibold'> پونو قهوه </h1>
                 <h2 >انواع قهوه اسپرسو ، قهوه ترک ، قهوه دمی ، دان قهوه، قهوه عربیکا، قهوه روبوستا</h2>
 
-                <Link href="#" className="text-xs md:text-base flex items-center float-left bg-orange-300 py-2 px-3 rounded-full">خرید آنلاین<svg className="w-4 h-4 md:w-5 md:h-5"><use href="#chevron-left"></use></svg></Link>
+                <MoreBtn
+                  title={"خرید آنلاین"}
+                  href={"/"}
+                />
 
               </div>
             </div>
@@ -303,7 +271,10 @@ export default function Home() {
                 <h1 className='text-4xl font-semibold'> پونو قهوه </h1>
                 <h2 >انواع قهوه اسپرسو ، قهوه ترک ، قهوه دمی ، دان قهوه، قهوه عربیکا، قهوه روبوستا</h2>
 
-                <Link href="#" className="text-xs md:text-base flex items-center float-left bg-orange-300 py-2 px-3 rounded-full">خرید آنلاین<svg className="w-4 h-4 md:w-5 md:h-5"><use href="#chevron-left"></use></svg></Link>
+                <MoreBtn
+                  title={"خرید آنلاین"}
+                  href={"/"}
+                />
 
               </div>
             </div>
@@ -314,7 +285,10 @@ export default function Home() {
                 <h1 className='text-4xl font-semibold'> پونو قهوه </h1>
                 <h2 >انواع قهوه اسپرسو ، قهوه ترک ، قهوه دمی ، دان قهوه، قهوه عربیکا، قهوه روبوستا</h2>
 
-                <Link href="#" className="text-xs md:text-base flex items-center float-left bg-orange-300 py-2 px-3 rounded-full">خرید آنلاین<svg className="w-4 h-4 md:w-5 md:h-5"><use href="#chevron-left"></use></svg></Link>
+                <MoreBtn
+                  title={"خرید آنلاین"}
+                  href={"/"}
+                />
 
               </div>
             </div>
@@ -342,8 +316,12 @@ export default function Home() {
               <img src="/assets/images/contact.png" alt="" />
             </div>
             <div className="space-y-4">
-              <h1 className="text-3xl md:text-5xl font-MorabbaM">یکی از بهترین قهوه ها !</h1>
-              <h3 className="font-MorabbaL text-2xl md:text-3xl">کیفیت قهوه را از ما بخواهید ...</h3>
+              {/* <h1 className="text-3xl md:text-5xl font-MorabbaM">یکی از بهترین قهوه ها !</h1>
+              <h3 className="font-MorabbaL text-2xl md:text-3xl">یکی از بهترین قهوه ها !</h3> */}
+              <SectionHeader
+                title={"یکی از بهترین قهوه ها !"}
+                subTitle={"یکی از بهترین قهوه ها !"}
+              />
               <p className="text-xl md:text-3xl text-gray-400">. . .</p>
               <br />
               <span className=" text-base md:text-2xl">فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه

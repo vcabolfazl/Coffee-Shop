@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import SectionHeader from './SectionHeader'
 export default function Blogs() {
     const [allBlogs, setAllBlogs] = useState([])
     useEffect(() => {
@@ -14,16 +15,11 @@ export default function Blogs() {
         <>
             <section className="mt-20 ">
                 <div className="container px-2">
-                    {/* <!-- Start Titel --> */}
-                    <div className="flex justify-between items-center">
-                        <h1 className="dark:text-white text-2xl md:text-5xl font-MorabbaM">مطالب خواندنی</h1>
-                        <div className="flex items-center text-left text-orange-300 gap-x-1">
-                            <Link to={'/Blogs'} className="text-xs md:text-2xl">مشاهده همه </Link>
-                            <svg className="w-4 h-4">
-                                <use href="#chevron-left"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <SectionHeader
+                        title={"مطالب خواندنی"}
+                        btnTitle={"مشاهده همه"}
+                        btnHref={"/Blogs"}
+                    />
                     {/* <!-- End Titel --> */}
                     <div className="grid gap-7 mt-12 dark:text-white grid-cols-2 md:grid-cols-4">
                         {/* <!-- Start Blog Card --> */}

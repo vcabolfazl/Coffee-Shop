@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import { Link, NavLink, useRoutes } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react';
-import Router from '../Pages/Router';
 export default function Header() {
   const [AllPrice, setAllPrice] = useState(4755000)
   const [allCategorys, setAllCategorys] = useState([])
@@ -30,7 +29,8 @@ export default function Header() {
         SetCart(cartProducts.Cart)
       })
   }, [])
-  const param = useRoutes(Router)
+  const param = useLocation()
+  // console.log(param.pathname);
   return (
     <>
       <section className={"header w-100 md:block hidden z-50 "}>
@@ -38,7 +38,7 @@ export default function Header() {
         <header style={{ zIndex: '999' }}
           className={`fixed z-50 right-0 left-0 h-24 px-20 w-full mx-auto
                     text-xl text-white justify-between p-3 flex items-center bg-black/50
-                    backdrop-blur-[6px] ${param.ref ? "top-0" : " top-9 px-5 w-[95%] xl:px-10 xl:w-[90%] rounded-3xl"} `}>
+                    backdrop-blur-[6px] ${param.pathname !== "/" ? "top-0" : " top-9 px-5 w-[95%] xl:px-10 xl:w-[90%] rounded-3xl"} `}>
           {/* <!-- Start Right Side Header --> */}
           <div className="col-right flex items-center gap-x-0 xl:gap-x-9">
             {/* <!-- Logo in Navbar --> */}
