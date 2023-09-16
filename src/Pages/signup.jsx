@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import { SignupError, Signupsuccess } from '../Alert/Alerts'
 import useInput from '../Hooks/useInput'
 import useShowPassword from '../Hooks/useShowPassword'
+import Alert from '../Components/Alert'
 export default function Signup() {
  useEffect(() => {
   window.scroll(0, 0)
@@ -20,9 +21,7 @@ export default function Signup() {
   e.preventDefault()
   const pattern = [/^[a-zA-Z0-9._%+-]+@(gmail|yahoo)\.com$/, /^[a-zA-Z0-9_]+$/,];
   if (pattern[0].test(emailValue) && pattern[1].test(userNameValue) && phoneValue.length === 11 && passwordValue === rePasswordvalue && nameValue) {
-   <>
-    {/* {Signupsuccess("ثبت نام با موفقیت انجام شد")} */}
-   </>
+   Alert("ثـبت نام با موفقیت انجام شد", "success")
    nameReset()
    userNamereset()
    phoneRest()
@@ -30,9 +29,8 @@ export default function Signup() {
    passwordReset()
    rePasswordReset()
   } else {
-   <>
-    {/* {SignupError("اطلاعات وارد شده صحیح نیست")} */}
-   </>
+   Alert("اطلاعات وارد شده صحیح نیست", "warning")
+
   }
  }
  return (

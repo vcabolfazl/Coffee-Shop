@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 // import { SignupError, Signupsuccess } from '../Alert/Alerts'
+
 import useInput from '../Hooks/useInput'
 import useShowPassword from '../Hooks/useShowPassword'
+import Alert from '../Components/Alert'
 export default function Login() {
  useEffect(() => {
   window.scroll(0, 0)
@@ -14,15 +16,11 @@ export default function Login() {
   e.preventDefault()
   const pattern = /^[a-zA-Z0-9_]+$/;
   if (pattern.test(usernameValue) && password.length) {
-   <>
-    {/* {Signupsuccess("ورود با موفقیت انجام شد")} */}
-   </>
+   Alert("ورود با موفقیت انجام شد", "success")
    userNamereset()
    passwordReset()
   } else {
-   <>
-    {/* {SignupError("اطلاعات وارد شده صحیح نیست")} */}
-   </>
+   Alert("اطلاعات وارد شده صحیح نیست", "warning")
    userNamereset()
    passwordReset()
   }
