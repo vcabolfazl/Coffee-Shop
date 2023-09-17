@@ -92,7 +92,9 @@
      transition: all 300ms;
      color: #FDBA74;
  }
-
+.activeLink{
+    color: #FDBA74;
+}
  .ProductBox {
      max-height: 240px;
      overflow-y: auto;

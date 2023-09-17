@@ -47,12 +47,14 @@ export default function Header() {
             </Link>
             {/* <!-- Start Navbar Menu --> */}
             <ul className="flex gap-x-5 text-base xl:gap-x-9 xl:text-xl text-gray-300">
-              <li className="font-danaM text-orange-200"><NavLink to={'/'} className={(link) => link.isActive ? "hover__link" : ''}> صفحه اصلی </NavLink></li>
+              <li className="font-danaM"><NavLink to={'/'} className={(link) => link.isActive ? "activeLink" : ''}> صفحه اصلی </NavLink></li>
               <li className="relative group flex gap-x-1">
-                <Link to={'/Products/'} className="group-hover:text-orange-300 transition-all"> فروشگاه </Link>
-                <svg className="w-4 m-auto h-4 group-hover:rotate-180 transition-all duration-450">
-                  <use href="#chevron-down"></use>
-                </svg>
+                <NavLink to={'/Products'} className={(link) => link.isActive ? "activeLink flex gap-x-1 group-hover:text-orange-300 transition-all" : 'flex gap-x-1 group-hover:text-orange-300 transition-all'}>
+                  فروشگاه
+                  <svg className="w-4 m-auto h-4 group-hover:rotate-180 transition-all duration-450">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                </NavLink>
                 <ul
                   className="absolute  invisible transition-all group-hover:visible bg-white
                                     dark:bg-zinc-700 w-52 mt-12 rounded-2xl p-5 space-y-4 text-md text-zinc-700 border-t-[3px]
@@ -68,9 +70,9 @@ export default function Header() {
                   }
                 </ul>
               </li>
-              <li><NavLink to={"/Blogs"} className={(link) => link.isActive ? "hover__link" : ''}> آموزش‌ها </NavLink></li>
-              <li><NavLink to={'/Info'} className={(link) => link.isActive ? "hover__link" : ''}> درباره ما </NavLink></li>
-              <li><NavLink to={'/cInfo'} className={(link) => link.isActive ? "hover__link" : ''}> تماس با ما </NavLink></li>
+              <li><NavLink to={"/Blogs"} className={(link) => link.isActive ? "activeLink" : ''}> آموزش‌ها </NavLink></li>
+              <li><NavLink to={'/Info'} className={(link) => link.isActive ? "activeLink" : ''}> درباره ما </NavLink></li>
+              <li><NavLink to={'/cInfo'} className={(link) => link.isActive ? "activeLink" : ''}> تماس با ما </NavLink></li>
             </ul>
             {/* <!-- End Navbar Menu --> */}
           </div>

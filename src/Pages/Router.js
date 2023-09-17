@@ -3,6 +3,7 @@ import Home from './Home'
 import Login from './login'
 import Signup from './signup'
 import ForgotPassword from './forgotPassword'
+import AllProducts from './AllProducts'
 // import ProductInfo from './components/AboutProduct/productInfo'
 // import Error from './components/404'
 // import ProductsPage from './components/ProductsPage/ProductsPage'
@@ -32,6 +33,15 @@ let Router = [
     {
         path: '/forgotPassword',
         element: <ForgotPassword />,
+    },
+    {
+        path: '/Products',
+        element: <AllProducts />,
+        
+    },
+    {
+        path: '/Products/:category',
+        element: <AllProducts />,
     },
     // {
     //     path: '/Blogs',
@@ -79,22 +89,6 @@ let Router = [
     // {
     //     path: '/product/:id',
     //     element: <ProductInfo />,
-    // },
-    // {
-    //     path: '/Products',
-    //     element: <ProductsPage />,
-
-    // },
-    // {
-    //     path: '/Products/:category',
-    //     element: <ProductsPage />,
-    //     children: [
-    //         { path: 'coffeeAndEspresso' },
-    //         { path: 'Accessories' },
-    //         { path: 'espressoMaker' },
-    //         { path: 'TestPack' },
-    //         { path: 'TurkCoffee' },
-    //     ]
     // },
     // {
     //     path: '*',
