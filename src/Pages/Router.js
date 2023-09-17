@@ -6,6 +6,7 @@ import ForgotPassword from './forgotPassword'
 import AllProducts from './AllProducts'
 import AboutProduct from './AboutProduct'
 import BlogPage from './Blogs/BlogPage'
+import AboutBlog from './Blogs/AboutBlog'
 
 let Router = [
     {
@@ -41,10 +42,10 @@ let Router = [
         path: '/Blogs',
         element: <BlogPage />,
     },
-    // {
-    //     path: '/Blogs/Blog/:id',
-    //     element: <Bloginfo />,
-    // },
+    {
+        path: '/Blogs/Blog/:id',
+        element: <AboutBlog />,
+    },
     // {
     //     path: '/Profile',
     //     element: <Profile />,
