@@ -111,7 +111,7 @@ export default function Header() {
                           </Link>
                         </div>
                         {/* <!-- Start Shopping Product --> */}
-                        <div className="ProductBox">
+                        <div className="ProductBox px-2">
                           {
                             cart.map(Product => (
                               <div className="" key={Product.id}>

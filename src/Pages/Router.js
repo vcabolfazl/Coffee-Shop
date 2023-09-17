@@ -4,6 +4,7 @@ import Login from './login'
 import Signup from './signup'
 import ForgotPassword from './forgotPassword'
 import AllProducts from './AllProducts'
+import AboutProduct from './AboutProduct'
 // import ProductInfo from './components/AboutProduct/productInfo'
 // import Error from './components/404'
 // import ProductsPage from './components/ProductsPage/ProductsPage'
@@ -42,6 +43,10 @@ let Router = [
     {
         path: '/Products/:category',
         element: <AllProducts />,
+    },
+    {
+        path: '/product/:id',
+        element: <AboutProduct />,
     },
     // {
     //     path: '/Blogs',
@@ -85,10 +90,6 @@ let Router = [
     // {
     //     path: '/cInfo',
     //     element: <ShopInfo />,
-    // },
-    // {
-    //     path: '/product/:id',
-    //     element: <ProductInfo />,
     // },
     // {
     //     path: '*',
