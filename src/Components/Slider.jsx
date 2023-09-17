@@ -5,8 +5,8 @@ import { Navigation } from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/pagination'
 import ProductCard from './ProductCard'
-
 export default function Slider({ Products }) {
+
  return (
   <Swiper
    navigation={true}

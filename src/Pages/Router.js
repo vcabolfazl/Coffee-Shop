@@ -5,18 +5,7 @@ import Signup from './signup'
 import ForgotPassword from './forgotPassword'
 import AllProducts from './AllProducts'
 import AboutProduct from './AboutProduct'
-// import ProductInfo from './components/AboutProduct/productInfo'
-// import Error from './components/404'
-// import ProductsPage from './components/ProductsPage/ProductsPage'
-// import BlogPage from './components/Blogs/BlogPage'
-// import Bloginfo from './components/Blogs/Bloginfo'
-// import CartPage from './components/CartPage/CartPage'
-// import ShopInfo from './components/infoShop/ShopInfo'
-// import Profile from "./components/Profile/Profile"
-// import ForgotPassword from './components/Login/forgotPassword'
-// import Information from './components/Profile/Information'
-// import Order from './components/Profile/order'
-// import ForgotPasswordUser from './components/Profile/forgotPassword'
+import BlogPage from './Blogs/BlogPage'
 
 let Router = [
     {
@@ -48,10 +37,10 @@ let Router = [
         path: '/product/:id',
         element: <AboutProduct />,
     },
-    // {
-    //     path: '/Blogs',
-    //     element: <BlogPage />,
-    // },
+    {
+        path: '/Blogs',
+        element: <BlogPage />,
+    },
     // {
     //     path: '/Blogs/Blog/:id',
     //     element: <Bloginfo />,

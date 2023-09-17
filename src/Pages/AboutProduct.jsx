@@ -11,6 +11,7 @@ import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 import { EffectCube, Pagination } from 'swiper/modules';
 import ProductCard from '../Components/ProductCard';
 import Slider from '../Components/Slider';
+import Blogs from '../Components/Blogs';
 export default function AboutProduct() {
  const [AllProductData, setAllProductData] = useState([])
  const [ProductData, setProductData] = useState([])
@@ -105,7 +106,7 @@ export default function AboutProduct() {
        Products={Allprod}
       />
      </div>
-     {/* <Blogs /> */}
+     <Blogs />
     </>
 
    }
