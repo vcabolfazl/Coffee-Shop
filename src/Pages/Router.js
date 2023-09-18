@@ -8,6 +8,7 @@ import AboutProduct from './AboutProduct'
 import BlogPage from './Blogs/BlogPage'
 import AboutBlog from './Blogs/AboutBlog'
 import Cart from './Cart'
+import AboutStore from './AboutStore'
 
 let Router = [
     {
@@ -51,6 +52,10 @@ let Router = [
         path: '/Cart',
         element: <Cart />,
     },
+            {
+                path: '/Information',
+                element: <AboutStore />,
+            },
     // {
     //     path: '/Profile',
     //     element: <Profile />,
@@ -66,10 +71,6 @@ let Router = [
     //         {
     //             path: 'Password',
     //             element: <ForgotPasswordUser />,
-    //         },
-    //         {
-    //             path: 'Information',
-    //             element: <Information />,
     //         },
 
     //     ]

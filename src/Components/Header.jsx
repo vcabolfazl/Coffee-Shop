@@ -71,7 +71,7 @@ export default function Header() {
                 </ul>
               </li>
               <li><NavLink to={"/Blogs"} className={(link) => link.isActive ? "activeLink" : ''}> آموزش‌ها </NavLink></li>
-              <li><NavLink to={'/Info'} className={(link) => link.isActive ? "activeLink" : ''}> درباره ما </NavLink></li>
+              <li><NavLink to={'/Information'} className={(link) => link.isActive ? "activeLink" : ''}> درباره ما </NavLink></li>
               <li><NavLink to={'/cInfo'} className={(link) => link.isActive ? "activeLink" : ''}> تماس با ما </NavLink></li>
             </ul>
             {/* <!-- End Navbar Menu --> */}
