@@ -7,6 +7,7 @@ import AllProducts from './AllProducts'
 import AboutProduct from './AboutProduct'
 import BlogPage from './Blogs/BlogPage'
 import AboutBlog from './Blogs/AboutBlog'
+import Cart from './Cart'
 
 let Router = [
     {
@@ -46,6 +47,10 @@ let Router = [
         path: '/Blogs/Blog/:id',
         element: <AboutBlog />,
     },
+    {
+        path: '/Cart',
+        element: <Cart />,
+    },
     // {
     //     path: '/Profile',
     //     element: <Profile />,
@@ -68,10 +73,6 @@ let Router = [
     //         },
 
     //     ]
-    // },
-    // {
-    //     path: '/Cart',
-    //     element: <CartPage />,
     // },
     // {
     //     path: '/Info',
