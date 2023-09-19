@@ -1,9 +1,9 @@
 import React from 'react'
-// import routes from './rout'
+import routes from './routes'
 import { useRoutes, Link } from 'react-router-dom'
 
 export default function Profile() {
-    // let router = useRoutes(routes)
+    let router = useRoutes(routes)
     return (
         <>
             <div className="container px-2 mt-44">
@@ -45,7 +45,7 @@ export default function Profile() {
                             </li>
                         </ul>
                     </nav>
-                    {/* {router} */}
+                    {router}
                 </div>
             </div>
         </>

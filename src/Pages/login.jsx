@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-// import { SignupError, Signupsuccess } from '../Alert/Alerts'
 
 import useInput from '../Hooks/useInput'
 import useShowPassword from '../Hooks/useShowPassword'
