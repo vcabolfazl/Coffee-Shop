@@ -9,6 +9,7 @@ import BlogPage from './Blogs/BlogPage'
 import AboutBlog from './Blogs/AboutBlog'
 import Cart from './Cart'
 import AboutStore from './AboutStore'
+import Profile from './Profile/Profile'
 
 let Router = [
     {
@@ -56,25 +57,25 @@ let Router = [
                 path: '/Information',
                 element: <AboutStore />,
             },
-    // {
-    //     path: '/Profile',
-    //     element: <Profile />,
-    //     children: [
-    //         {
-    //             path: '/Profile',
-    //             element: <Information />,
-    //         },
-    //         {
-    //             path: 'Order',
-    //             element: <Order />,
-    //         },
-    //         {
-    //             path: 'Password',
-    //             element: <ForgotPasswordUser />,
-    //         },
+    {
+        path: '/Profile',
+        element: <Profile />,
+        // children: [
+        //     {
+        //         path: '/Profile',
+        //         element: <Information />,
+        //     },
+        //     {
+        //         path: 'Order',
+        //         element: <Order />,
+        //     },
+        //     {
+        //         path: 'Password',
+        //         element: <ForgotPasswordUser />,
+        //     },
 
-    //     ]
-    // },
+        // ]
+    },
     // {
     //     path: '/Info',
     //     element: <ShopInfo />,
