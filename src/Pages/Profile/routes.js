@@ -1,16 +1,15 @@
 import Information from "./Information"
-// import ForgotPasswordUser from "./forgotPassword"
-// import Order from "./order"
+import Order from "./Order"
 
 const routes = [
     {
         path: '/',
         element: <Information />,
     },
-    // {
-    //     path: 'Order',
-    //     element: <Order/>,
-    // },
+    {
+        path: 'Order',
+        element: <Order />,
+    },
     // {
     //     path: 'Password',
     //     element: <ForgotPasswordUser />,

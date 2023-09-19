@@ -10,6 +10,8 @@ import AboutBlog from './Blogs/AboutBlog'
 import Cart from './Cart'
 import AboutStore from './AboutStore'
 import Profile from './Profile/Profile'
+import Order from './Profile/Order'
+import Information from './Profile/Information'
 
 let Router = [
     {
@@ -60,21 +62,21 @@ let Router = [
     {
         path: '/Profile',
         element: <Profile />,
-        // children: [
-        //     {
-        //         path: '/Profile',
-        //         element: <Information />,
-        //     },
-        //     {
-        //         path: 'Order',
-        //         element: <Order />,
-        //     },
-        //     {
-        //         path: 'Password',
-        //         element: <ForgotPasswordUser />,
-        //     },
+        children: [
+            {
+                path: '/Profile',
+                element: <Information />,
+            },
+            {
+                path: 'Order',
+                element: <Order />,
+            },
+            // {
+            //     path: 'Password',
+            //     element: <ForgotPasswordUser />,
+            // },
 
-        // ]
+        ]
     },
     // {
     //     path: '/Info',
