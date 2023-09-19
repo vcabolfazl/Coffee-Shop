@@ -12,6 +12,7 @@ import AboutStore from './AboutStore'
 import Profile from './Profile/Profile'
 import Order from './Profile/Order'
 import Information from './Profile/Information'
+import ForgotPasswordUser from './Profile/forgotPassword'
 
 let Router = [
     {
@@ -71,10 +72,10 @@ let Router = [
                 path: 'Order',
                 element: <Order />,
             },
-            // {
-            //     path: 'Password',
-            //     element: <ForgotPasswordUser />,
-            // },
+            {
+                path: 'Password',
+                element: <ForgotPasswordUser />,
+            },
 
         ]
     },
