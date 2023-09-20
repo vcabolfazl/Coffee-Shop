@@ -252,4 +252,21 @@
             margin-top: -5px;
         }
     }
+    .error404 {
+        margin-top: 8rem;
+        width: 100%;
+        animation: error404 1.2s alternate;
+    }
+    #dropdownRadio{
+        position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 3847.5px, 0px);
+    }
+    @keyframes  error404{
+        from {
+            width: 50%;
+        }
+        
+        to {
+            width: 100%;
+        }
+    }
 }

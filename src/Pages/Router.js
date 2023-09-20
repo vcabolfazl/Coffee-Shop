@@ -13,6 +13,7 @@ import Profile from './Profile/Profile'
 import Order from './Profile/Order'
 import Information from './Profile/Information'
 import ForgotPasswordUser from './Profile/forgotPassword'
+import Error from './404'
 
 let Router = [
     {
@@ -34,7 +35,7 @@ let Router = [
     {
         path: '/Products',
         element: <AllProducts />,
-        
+
     },
     {
         path: '/Products/:category',
@@ -56,10 +57,10 @@ let Router = [
         path: '/Cart',
         element: <Cart />,
     },
-            {
-                path: '/Information',
-                element: <AboutStore />,
-            },
+    {
+        path: '/Information',
+        element: <AboutStore />,
+    },
     {
         path: '/Profile',
         element: <Profile />,
@@ -79,18 +80,14 @@ let Router = [
 
         ]
     },
-    // {
-    //     path: '/Info',
-    //     element: <ShopInfo />,
-    // },
+    {
+        path: '*',
+        element: <Error />,
+
+    },
     // {
     //     path: '/cInfo',
     //     element: <ShopInfo />,
-    // },
-    // {
-    //     path: '*',
-    //     element: <Error />,
-
     // },
 
 
