@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 export default function BlogPage() {
+ 
  const [Blogs, setBlogs] = useState([])
  const [currentPage, setCurrentPage] = useState(1);
  const [paginatedBlogs, setPaginatedBlogs] = useState([]);
@@ -31,9 +32,6 @@ export default function BlogPage() {
  const changePaginate = (newPage) => {
   setCurrentPage(newPage);
  };
- useEffect(() => {
-  window.scrollTo(0, 0)
- }, [])
  return (
   <>
    <div className="container mt-44 ltr px-2 grid grid-cols-2 md:grid-cols-4 gap-5 dark:text-white">

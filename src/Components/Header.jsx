@@ -90,7 +90,7 @@ export default function Header() {
                     <span className='absolute top-[-5px] px-1.5 right-[-5px]  bg-orange-200 text-white rounded-full text-sm font-bold'>{cart.length}</span>
                     : ''
                 }
-                <Link ><svg className="w-8 h-8">
+                <Link to={"/cart"}><svg className="w-8 h-8">
                   <use href="#shoppingCart"></use>
                 </svg></Link>
                 {/* <!-- start Hover Box --> */}
